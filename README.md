@@ -11,6 +11,7 @@ Example 2
 This is simple example that rotates image when user mouseover/mouseout object　／／当用户触发mouseover/mouseout事件的一个简单效果
 
 $("#img").rotate({ 
+
    bind: 
      { 
         mouseover : function() { 
@@ -70,7 +71,11 @@ $("#img").rotate({
      { 
         click: function(){
         
-            $(this).rotate({ angle:0,animateTo:180,easing: $.easing.easeInOutExpo })
+            $(this).rotate({ 
+                angle:0,
+                animateTo:180,
+                easing: $.easing.easeInOutExpo 
+            })
             
         }
      } 
