@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+	<style>
+     .rotate-box{position: relative;}
+     .zp{position: absolute;top:150px;left:180px; cursor:pointer; }
+     .dialog{border:solid 3px #eee;width:200px;height:100px;padding:20px;color:#383838;position: absolute;top:210px;background-color:#fff;border-radius: 5px;left:160px;play: none;}
+     .closed{background-image:url('images/close.png');background-repeat:no-repeat;position: absolute;right:0;top:0;width:16px;height: 16px;text-indent:-999999px;}
+     .closed:hover{background-position:-20px 0;cursor: pointer;}
+	</style>
+</head>
+<body>
+	<div class="rotate-box">
+		<img src="images/zp.png" id="img" />
+		<img src="images/zp-01.png" class="zp" id="zp" />
+		<div class="dialog" id="dialog">
+			<span class="closed" id="closed">关闭</span>
+			后台传入什么json数据给前端呢？？
+		</div>
+	</div>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jQueryRotate.js"></script>
+	<script src="js/rorate.js"></script>
+</body>
+</html>
