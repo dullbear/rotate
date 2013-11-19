@@ -1,19 +1,16 @@
+html: <img src="Example.jpg" id="img" />
+
 Example 1
 
-Simply rotate an image
+Simply rotate an image　／／简单滚动图片
 
 $("#img").rotate(45);
 
-    or 
-
 $("#img").rotate({angle:45});
-
 
 Example 2
 
-This is simple example that rotates image when user mouseover/mouseout object.
-
-    Mouseover arrow to see effect. 
+This is simple example that rotates image when user mouseover/mouseout object　／／当用户触发mouseover/mouseout事件的一个简单效果
 
 $("#img").rotate({ 
    bind: 
@@ -31,7 +28,7 @@ $("#img").rotate({
 
 Example 3
 
-Rotate image endlessly
+Rotate image endlessly　／／不停的旋转图片
 
 var angle = 0;
 setInterval(function(){
@@ -39,9 +36,8 @@ setInterval(function(){
      $("#img").rotate(angle);
 },50);
 
-S
 
-Rotate image endlessly using recursive function
+Rotate image endlessly using recursive function ／／函数递归不停旋转图片
 
 var rotation = function (){
    $("#img").rotate({
@@ -50,33 +46,11 @@ var rotation = function (){
       callback: rotation
    });
 }
-
 rotation();
-
-See live example here: http://jsfiddle.net/YKj5D/
-
-Rotate image endlessly using recursive function and custom easing (similar to example with simple endless rotation)
-
-var rotation = function (){
-   $("#img").rotate({
-      angle:0, 
-      animateTo:360, 
-      callback: rotation,
-      easing: function (x,t,b,c,d){        // t: current time, b: begInnIng value, c: change In value, d: duration
-          return c*(t/d)+b;
-      }
-   });
-}
-rotation();
-
 
 Example 4
 
-
-
-(remember to also include <script> contains easing)
-
-    Click on arrow to see effect. 
+Click on arrow to see effect　／／点击箭头查看效果
 
 $("#img").rotate({ 
    bind: 
@@ -90,9 +64,7 @@ $("#img").rotate({
 
 Example 5
 
-Animation shows how to use variables in JavaScript...
-
-Click on arrow to see effect.
+Animation shows how to use variables in JavaScript //动画演示如何使用变量
 
 var value = 0
 $("#img").rotate({ 
@@ -105,3 +77,7 @@ $("#img").rotate({
      } 
    
 });
+
+网址：http://code.google.com/p/jqueryrotate/
+
+
